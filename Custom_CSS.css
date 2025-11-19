@@ -1,0 +1,29 @@
+html, body {
+  height: 100%;
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;   
+}
+
+#particles-js canvas {
+  background: transparent !important;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: black; /* fallback */
+}
+
+body > *:not(#particles-js) {
+  position: relative;
+  z-index: 1;
+}
