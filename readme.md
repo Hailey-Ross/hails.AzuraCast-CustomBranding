@@ -16,7 +16,7 @@ These files let you fully modernize your AzuraCast public pages with:
 - 🎆 A dynamic **Particles.js** animated background  
 - 🌄 **Random background images** on each page reload  
 - 🎨 Clean layering so AzuraCast’s UI remains fully interactive  
-- 🧩 100% automatic injection — *no HTML editing required*  
+- 🧩 100% automatic injection, *no HTML editing required*  
 
 This setup mirrors the behavior of your original standalone homepage and adapts it for AzuraCast’s branding system.
 
@@ -102,11 +102,13 @@ The JS file expects hosted assets such as:
 
 ```
 https://yourdomain.com/path/bg1.jpg
+https://yourdomain.com/path/bg-special.png
 https://yourdomain.com/path/particles.js
 https://yourdomain.com/path/script.js
 ```
+- Update `Custom_JS.js` to match how your domain and filepaths are setup.  
 
-If your file paths change, update them in `Custom_JS.js`.
+###### ⚠️Configure/Download `particles.js` and `script.js` from Vincent Garreau's [Particles.js](https://vincentgarreau.com/particles.js/) project.  
 
 ---
 
