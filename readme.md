@@ -98,7 +98,7 @@ No HTML editing is required — the script injects everything automatically.
 
 ## 🖼 Asset Requirements
 
-The JS file expects hosted assets such as:
+The JS file expects hosted assets, such as:
 
 ```
 https://yourdomain.com/path/bg1.jpg
@@ -106,9 +106,20 @@ https://yourdomain.com/path/bg-special.png
 https://yourdomain.com/path/particles.js
 https://yourdomain.com/path/script.js
 ```
-- Update `Custom_JS.js` to match how your domain and filepaths are setup.  
 
-###### ⚠️Configure/Download `particles.js` and `script.js` from Vincent Garreau's [Particles.js](https://vincentgarreau.com/particles.js/) project.  
+###### ⚠️ Configure or download `particles.js` and `script.js` from Vincent Garreau's [Particles.js](https://vincentgarreau.com/particles.js/) project.  
+- Update `Custom_JS.js` to match how your domain and file paths are set up.
+
+Within `Custom_JS.js`, you will need to update `coreScript.src = 'https://LINK_TO/particlejs/particles.js';` and `configScript.src = 'https://LINK_TO/particlejs/script.js';` near the bottom, as well as the `bgImages` variable at the top:
+
+```
+const bgImages = [
+      'URL TO IMAGE',
+      'URL TO IMAGE',
+      'URL TO IMAGE'
+    ];
+```
+
 
 ---
 
