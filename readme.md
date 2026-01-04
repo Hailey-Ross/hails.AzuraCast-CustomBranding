@@ -97,17 +97,14 @@ No HTML editing is required — the script injects everything automatically.
 ---
 
 ## 🖼 Asset Requirements
-
+###### ⚠️ Configure/download `particles.js` and `script.js` from Vincent Garreau's [Particles.js](https://vincentgarreau.com/particles.js/) project.  
 The JS file expects hosted assets, such as:
-
 ```
 https://yourdomain.com/path/bg1.jpg
 https://yourdomain.com/path/bg-special.png
 https://yourdomain.com/path/particles.js
 https://yourdomain.com/path/script.js
 ```
-
-###### ⚠️ Configure or download `particles.js` and `script.js` from Vincent Garreau's [Particles.js](https://vincentgarreau.com/particles.js/) project.  
 - Update `Custom_JS.js` to match how your domain and file paths are set up.
 
 Within `Custom_JS.js`, you will need to update `coreScript.src = 'https://LINK_TO/particlejs/particles.js';` and `configScript.src = 'https://LINK_TO/particlejs/script.js';` near the bottom, as well as the `bgImages` variable at the top:
@@ -152,5 +149,6 @@ This repo acts as a **backup** and **version-controlled reference** for all futu
 - Make sure all background URLs load properly in your browser
 
 ### UI appearing behind particles?
-- Adjust `z-index` values in `Custom_CSS.css` if needed  
+- FIRST, ensure you have no typos in your code.
+- Try adjusting `z-index` values in `Custom_CSS.css` if needed  
 
