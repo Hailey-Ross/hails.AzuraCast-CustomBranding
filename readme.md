@@ -142,10 +142,12 @@ This repo acts as a **backup** and **version-controlled reference** for all futu
 ## 🧪 Troubleshooting
 
 ### Particles not showing?
-- Ensure your `particles.js` URL is pointing to the correct location on your hosting provider  
+- Ensure your `particles.js` URL is pointing to the correct location on your hosting provider
+- Double check the URLs for typos.
 - Check that `#particles-js` is being injected (browser inspector)
 
 ### Background not changing?
+- Triple check the URLs for typos.
 - Make sure all background URLs load properly in your browser
 
 ### UI appearing behind particles?
